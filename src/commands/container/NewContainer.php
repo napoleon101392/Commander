@@ -11,7 +11,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class New extends Command
+class NewContainer extends Command
 {
     protected static $defaultName = 'container:new';
 
