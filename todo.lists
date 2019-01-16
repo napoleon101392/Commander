@@ -1,0 +1,3 @@
+* Check the difference of Console and Terminal
+*   : src/commands/helpers/Console.php
+    : src/commands/Terminal.php
