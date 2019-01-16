@@ -6,6 +6,11 @@ use Symfony\Component\Console\Application;
 
 class App
 {
+    /**
+     * Starting point of the application
+     *
+     * @return void
+     */
     public static function fire()
     {
         $app = new Application;

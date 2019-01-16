@@ -2,3 +2,6 @@ tests/*
 vendor
 .env
 phpunit.xml
+src/commands/docker/containers/*
+src/config/containers.php
+containers.json
