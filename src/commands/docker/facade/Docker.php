@@ -3,9 +3,8 @@
 namespace Napoleon\Commander\Docker\Facade;
 
 use Napoleon\Commander\Contracts\DockerInterface;
-
-use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
 
 class Docker implements DockerInterface
 {
@@ -31,7 +30,7 @@ class Docker implements DockerInterface
             }
         });
 
-        if (! $process->isSuccessful()) {
+        if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
         }
 

@@ -3,7 +3,6 @@
 namespace Napoleon\Commander\Commands\Docker;
 
 use Napoleon\Commander\Docker\Facade\Docker;
-
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -41,7 +40,7 @@ class Stop extends Command
     {
         $output->writeln([
             "Shuting down containers ... ",
-            "============================="
+            "=============================",
         ]);
 
         foreach (config('containers') as $container => $commands) {
@@ -50,7 +49,7 @@ class Stop extends Command
 
         $output->writeln([
             "==============================",
-            "Successfully stopped all containers"
+            "Successfully stopped all containers",
         ]);
     }
 }

@@ -2,11 +2,10 @@
 
 namespace Napoleon\Commander\Commands\Container;
 
-use Napoleon\Commander\Terminal;
 use Napoleon\Commander\Helpers\Console;
-
-use Symfony\Component\Console\Helper\Table;
+use Napoleon\Commander\Terminal;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -18,7 +17,7 @@ class NewContainer extends Command
     public function configure()
     {
         $this->setDescription('Create a new compose file to start with')
-             ->addArgument('name', InputArgument::REQUIRED, 'File name of your docker-compose');
+            ->addArgument('name', InputArgument::REQUIRED, 'File name of your docker-compose');
     }
 
     /**

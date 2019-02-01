@@ -26,7 +26,7 @@ class Console
             $folders = explode("\n", substr($buffer, self::FROM_ZERO, self::LAST_TWO));
 
             foreach ($folders as $key => $folder) {
-                $lists[] = [$key+1, $folder];
+                $lists[] = [$key + 1, $folder];
             }
         });
 

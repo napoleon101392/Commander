@@ -14,8 +14,8 @@
  */
 return [
     # Databases
-    'msql' => [],
-    'mysql' => [],
+    'msql'            => [],
+    'mysql'           => [],
 
     # Apache
     'apache-server-1' => [],
@@ -24,6 +24,6 @@ return [
     'apache-server-4' => [],
 
     # Nginx PHP 7.1
-    'nginx-server-1' => [],
-    'nginx-server-2' => [],
+    'nginx-server-1'  => [],
+    'nginx-server-2'  => [],
 ];

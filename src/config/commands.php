@@ -13,5 +13,5 @@ return [
     \Napoleon\Commander\Commands\Docker\Start::class,
     \Napoleon\Commander\Commands\Docker\Stop::class,
     \Napoleon\Commander\Commands\Container\NewContainer::class,
-    \Napoleon\Commander\Commands\Container\ListContainer::class
+    \Napoleon\Commander\Commands\Container\ListContainer::class,
 ];

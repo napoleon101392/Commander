@@ -4,9 +4,8 @@ namespace Napoleon\Commander;
 
 use Napoleon\Commander\Contracts\DockerInterface;
 use Napoleon\Commander\Exceptions\DockerComposeFileException;
-
-use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use Symfony\Component\Process\Process;
 
 class Terminal implements DockerInterface
 {
@@ -20,7 +19,7 @@ class Terminal implements DockerInterface
             }
         });
 
-        if (! $process->isSuccessful()) {
+        if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
         }
 

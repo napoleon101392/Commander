@@ -13,7 +13,7 @@ class App
      */
     public static function fire()
     {
-        $app = new Application;
+        $app      = new Application;
         $commands = config('commands');
 
         foreach ($commands as $command) {

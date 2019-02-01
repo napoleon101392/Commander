@@ -2,10 +2,10 @@
 
 namespace Napoleon\Commander\Commands\Docker;
 
+use Napoleon\Commander\Docker\Facade\Docker;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Napoleon\Commander\Docker\Facade\Docker;
 
 class Start extends Command
 {
@@ -41,7 +41,7 @@ class Start extends Command
     {
         $output->writeln([
             "Starting docker containers ...",
-            "============================="
+            "=============================",
         ]);
 
         foreach (config('containers') as $container => $commands) {
@@ -54,7 +54,7 @@ class Start extends Command
 
         $output->writeln([
             "=============================",
-            "Docker started"
+            "Docker started",
         ]);
     }
 }
